@@ -1,0 +1,30 @@
+<% provide(:title, "Page #{@quiz_form.current_step} of #{QuizConstantsHelper::NUMBER_OF_PAGES}") %>
+<div class="container w-75 mt-5 mb-4 pt-5">
+  <h2><%= @quiz_form.current_page_range %></h2>
+  <hr class="border border-danger w-100 border-2 my-2">
+  <% question_index = 0 %>
+
+  <%= form_for @quiz_form, url: step_path(@quiz_form.current_step, locale: I18n.locale), method: :patch do |f| %>
+    <%= render partial: "shared/form_errors", locals: { object: @quiz_form, error_style: :quiz } %>
+
+    <% if @quiz_form.current_step < 3 %>
+      <%= render "choice_questions", quiz_form: @quiz_form, question_index: question_index, form: f %>
+    <% else %>
+      <%= render "free_questions", quiz_form: @quiz_form, question_index: question_index, form: f %>
+    <% end %>
+
+    <div class="row mt-4">
+      <div class="col-12 col-md-6 d-flex justify-content-md-start justify-content-center mb-3 mb-md-0 <%= 'invisible' if @quiz_form.current_step == 1 %>">
+        <%= link_to t('forms.back_button'), step_path(@quiz_form.current_step - 1, locale: I18n.locale), class: "btn btn-outline-danger px-5" %>
+      </div>
+
+      <div class="col-12 col-md-6 d-flex justify-content-md-end justify-content-center">
+        <% if @quiz_form.current_step < @quiz_form.total_steps %>
+          <%= f.submit t('forms.next'), class: "btn btn-danger px-5" %>
+        <% else %>
+          <%= f.submit t('forms.submit'), class: "btn btn-danger px-5" %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>

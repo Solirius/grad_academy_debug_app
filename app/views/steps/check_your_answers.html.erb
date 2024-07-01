@@ -1,0 +1,40 @@
+<% provide(:title, t('check_answers.title')) %>
+<div id="check-answers" class="container d-flex flex-column align-items-center mt-4 mb-4 pt-5">
+  <h1 class="text-danger text-center"><%= t('check_answers.heading') %></h1>
+  <hr class="border border-danger w-100 border-2 my-2">
+
+  <div class="border border-danger border-bottom-0 rounded overflow-hidden mt-4 w-100">
+    <div class="table-responsive">
+      <table class="table border-danger m-0">
+        <thead>
+          <tr>
+            <th><%= t('check_answers.table.question_number') %></th>
+            <th style="width: 50%"><%= t('check_answers.table.question') %></th>
+            <th><%= t('check_answers.table.answer') %></th>
+            <th class="text-center" style="width: 20%"><%= t('check_answers.table.change_answer') %></th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider border-danger">
+          <% question_page_number = 0 %>
+          <% @quiz_results.answer.each do |question, answers| %>
+            <% question_page_number += 1 %>
+            <% answers.each_with_index do |answer, index| %>
+              <tr>
+                <td><%= continuous_index(question_page_number, index+1) %></td>
+                <td><%= format_quiz_question(question, index) %></td>
+                <td><%= answer %></td>
+                <td class="text-center">
+                  <%= link_to t('check_answers.table.change'), edit_step_path(id: question_page_number, answer: @quiz_results.answer), class: "btn btn-danger px-3" %>
+                </td>
+              </tr>
+            <% end %>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <%= link_to t('check_answers.buttons.submit'), "#", class: "mt-5 btn btn-danger btn-md mx-auto px-5", data: { bs_toggle: "modal", bs_target: "#submitModal" } %>
+</div>
+
+<%= render 'shared/submit_modal' %>

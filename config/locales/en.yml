@@ -1,0 +1,197 @@
+en:
+  languages:
+    en: "English"
+    fr: "French"
+  authentication:
+    redirect_if_authenticated_message: "You are already logged in"
+    redirect_if_not_authenticated_message: "Please log in to access this page."
+  sessions:
+    create_an_account: "Or create an account"
+    signed_in: "Signed in successfully"
+    signed_out: "Signed out successfully"
+    sign_out_modal_title: "Confirm sign out"
+    sign_out_confirmation: "Are you sure you want to sign out?"
+    sign_out_cancel: "Cancel"
+  users:
+    signed_up: "Welcome! You have signed up successfully"
+    updated: "Updated profile successfully"
+    no_score_available: "No score available"
+    sign_up_headline: "Start your quiz journey today!"
+    sign_up_line_one: "Join us to dive into the world of knowledge"
+    create_account: "Create your account"
+    login_prompt: "Already have an account?"
+    errors:
+      invalid_email_or_password: "Invalid email or password"
+  answers:
+    errors:
+      unanswered_questions: "Please answer all questions"
+      empty_answer: "Answer can't be empty"
+      invalid_question_name: "Invalid question name: %{question_name}"
+      invalid_answer: "Invalid answer: %{answer}"
+  welcome:
+    start_quiz: "Start Quiz"
+    instructions:
+      title: "Welcome to QuizApp, <span class=\"username\">%{username}</span>!"
+      subtitle: "Get ready to test your knowledge and have fun with our exciting quizzes! Here are some basic instructions to help you get started:"
+      list:
+        answer_questions: "Answer Questions: Read each question carefully and select the answer you think is correct. You can go back and edit your answers before submitting by using the navigation buttons."
+        submit_answers: "Submit Your Answers: Once you're confident with your answers, click the \"Submit\" button at the end of the quiz. You'll then be able to see your score and review the correct answers."
+        start_quiz: "Start the Quiz: To begin the quiz, simply click the button below. Good luck, and enjoy the challenge!"
+  forms:
+    sign_in: "Sign in"
+    sign_up: "Sign up"
+    sign_out: "Sign out"
+    username: "Username"
+    email: "Email"
+    language: "Language"
+    edit_profile: "Edit Profile"
+    top_score_profile: "Top Score: "
+    update_profile: "Update Profile"
+    next: "Next"
+    submit: "Submit"
+    back_button: "Back"
+    scoreboard: "Scoreboard"
+  quiz_results:
+    your_score: "YOUR SCORE: "
+    score: "%{score}%"
+    questions_correctly_answered: "%{correct} of %{total} questions correctly answered"
+  quiz_form:
+    errors:
+      blank_answer: "answer required"
+    current_page_range: "Page %{start_page} of 3"
+    question_page_1:
+      submit: "Next"
+      question_1:
+        question: "What is the largest bone in the human body?"
+        answer_1: "Femur"
+        answer_2: "Tibia"
+        answer_3: "Humerus"
+        answer_4: "Radius"
+        correct_answer: "Femur"
+      question_2:
+        question: "Who developed the theory of relativity?"
+        answer_1: "Isaac Newton"
+        answer_2: "Albert Einstein"
+        answer_3: "Galileo Galilei"
+        answer_4: "Stephen Hawking"
+        correct_answer: "Albert Einstein"
+      question_3:
+        question: "Which company developed the first commercially successful microprocessor?"
+        answer_1: "IBM"
+        answer_2: "Microsoft"
+        answer_3: "Apple"
+        answer_4: "Intel"
+        correct_answer: "Intel"
+      question_4:
+        question: "What is the tallest mountain in the world?"
+        answer_1: "Mount Kilimanjaro"
+        answer_2: "Mount Everest"
+        answer_3: "Mount Fuji"
+        answer_4: "Mount McKinley (Denali)"
+        correct_answer: "Mount Everest"
+      question_5:
+        question: "Which gas makes up the majority of Earth's atmosphere?"
+        answer_1: "Oxygen"
+        answer_2: "Carbon dioxide"
+        answer_3: "Nitrogen"
+        answer_4: "Hydrogen"
+        correct_answer: "Nitrogen"
+    question_page_2:
+      submit: "Next"
+      question_1:
+        question: "What is the process by which plants make their own food called?"
+        answer_1: "Photosynthesis"
+        answer_2: "Respiration"
+        answer_3: "Transpiration"
+        answer_4: "Germination"
+        correct_answer: "Photosynthesis"
+      question_2:
+        question: "What is the study of insects called?"
+        answer_1: "Herpetology"
+        answer_2: "Ornithology"
+        answer_3: "Entomology"
+        answer_4: "Ichthyology"
+        correct_answer: "Entomology"
+      question_3:
+        question: "Who was the first woman to win a Nobel Prize?"
+        answer_1: "Rosalind Franklin"
+        answer_2: "Dorothy Hodgkin"
+        answer_3: "Barbara McClintock"
+        answer_4: "Marie Curie"
+        correct_answer: "Marie Curie"
+      question_4:
+        question: "Which programming language was developed by Guido van Rossum and is known for its readability and simplicity?"
+        answer_1: "Java"
+        answer_2: "C++"
+        answer_3: "Python"
+        answer_4: "Ruby"
+        correct_answer: "Python"
+      question_5:
+        question: "Who is the author of the novel 'The Catcher in the Rye'?"
+        answer_1: "J.D. Salinger"
+        answer_2: "F. Scott Fitzgerald"
+        answer_3: "Ernest Hemingway"
+        answer_4: "Harper Lee"
+        correct_answer: "J.D. Salinger"
+    question_page_3:
+      submit: "Next"
+      question_1:
+        question: "What is the tallest mammal on Earth?"
+        correct_answer: "giraffe"
+      question_2:
+        question: "What is the world’s largest ocean?"
+        correct_answer: "pacific"
+      question_3:
+        question: "What is the capital city of Peru?"
+        correct_answer: "lima"
+      question_4:
+        question: "What is the chemical symbol for gold?"
+        correct_answer: "au"
+      question_5:
+        question: "What is your favourite programming language?"
+        correct_answer: "ruby"
+  check_answers:
+    title: "Check Answers"
+    heading: "CHECK YOUR ANSWERS"
+    submit_modal_title: "Confirm Submission"
+    submit_modal_confirmation: "Are you sure you want to submit your answers and see your results?"
+    submit_modal_cancel: "Cancel"
+    table:
+      question_number: "Question Number"
+      question: "Question"
+      answer: "Answer"
+      change_answer: "Change Answer"
+      change: "Change"
+    buttons:
+      submit: "Submit your answers"
+  results:
+    title: "Results"
+    heading: "RESULTS"
+    table:
+      question: "Question"
+      correct_answer: "Correct Answer"
+      answered: "Answered"
+      correct_incorrect: "Correct/Incorrect"
+    buttons:
+      continue: "Continue"
+  scoreboard:
+    title: "Scoreboard"
+    heading: "SCOREBOARD"
+    table:
+      quiz: "Quiz"
+      user: "User"
+      date: "Date"
+      score: "Score"
+      download_results: "Download Results"
+      quiz_number: "Quiz #%{id}"
+      download_filename: "quiz%{id}.csv"
+      username: "Username"
+      quiz_id: "Quiz ID"
+      date_attempted: "Date Attempted"
+      overall_score: "Overall Score"
+      question: "Question"
+      given_answer: "Given Answer"
+      correct_answer: "Correct Answer"
+    buttons:
+      start_new_quiz: "Start New Quiz"
+      download_all_results: "Download all results"

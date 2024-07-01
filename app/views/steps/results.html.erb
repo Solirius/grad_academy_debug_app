@@ -1,0 +1,38 @@
+<% provide(:title, t('results.title')) %>
+<div id="results-page" class="container d-flex flex-column align-items-center mt-4 mb-4 pt-5">
+  <h1 class="text-danger text-center"><%= t('results.heading') %></h1>
+  <hr class="border border-danger w-100 border-2 my-2">
+
+  <div class="border border-danger w-100 rounded mt-4 mb-4 px-1">
+    <h2 class="text-danger text-center mx-3 mt-3">
+      <%= t('quiz_results.your_score') %><span class="text-dark"><%= t('quiz_results.score', score: @score_percentage) %></span>
+    </h2>
+    <h3 class="text-dark text-center mb-3">
+      <%= t('quiz_results.questions_correctly_answered', correct: @correct_answers, total: @total_questions) %>
+    </h3>
+  </div>
+
+  <div class="border border-danger border-bottom-0 rounded overflow-hidden mt-4 mb-4 w-100">
+    <div class="table-responsive">
+      <table class="table border-danger m-0">
+        <thead>
+          <tr>
+            <th><%= t('results.table.question') %></th>
+            <th><%= t('results.table.correct_answer') %></th>
+            <th><%= t('results.table.answered') %></th>
+            <th><%= t('results.table.correct_incorrect') %></th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider border-danger">
+            <% @quiz_results.answer.each_with_index do |answers, index| %>
+              <% answers[1].each_with_index do |_answer, question_index| %>
+                <%= generate_table_row(index, question_index, answers) %>
+              <% end %>
+            <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <%= link_to t('results.buttons.continue'), scoreboard_steps_path, class: "btn btn-danger btn-md mx-auto px-5" %>
+</div>

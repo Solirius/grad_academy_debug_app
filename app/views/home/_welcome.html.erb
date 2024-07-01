@@ -1,0 +1,19 @@
+<div id="welcome" class="container w-75 mt-5 mb-4 pt-5">
+  <h1 class="text-danger"><%= t('welcome.instructions.title', username: current_user.username).html_safe %>
+  </h1>
+  <hr class="border-top border-3 border-danger my-2">
+  <br/>
+  <br/>
+  <p class="lead"><%= t('welcome.instructions.subtitle') %></p>
+  <ul class="list">
+    <li class="mb-2"><%= t('welcome.instructions.list.answer_questions') %></li>
+    <li class="mb-2"><%= t('welcome.instructions.list.submit_answers') %></li>
+    <li class="mb-2"><%= t('welcome.instructions.list.start_quiz') %></li>
+  </ul>
+
+  <br/>
+
+  <div class="text-center">
+    <%= link_to t('welcome.start_quiz'), step_path(id: 1), class: "btn btn-danger btn-md mx-auto px-5" %>
+  </div>
+</div>

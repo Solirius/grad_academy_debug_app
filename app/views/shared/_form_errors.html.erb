@@ -1,0 +1,20 @@
+<% if object&.errors&.any? %>
+  <% if defined?(error_style) && error_style == :quiz %>
+    <div class="errors pt-5">
+      <h3>Validation errors:</h3>
+      <ul class="list-unstyled">
+        <% object.errors.each_with_index do |error, _index| %>
+          <li>
+            <%= link_to validation_error_text(object.current_step, error.attribute[-1]), "#question_#{error.attribute[-1]}", class: "link-danger" %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  <% else %>
+    <ul class="list-unstyled">
+      <% object.errors.full_messages.each do |message| %>
+        <li class="text-danger"><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+<% end %>

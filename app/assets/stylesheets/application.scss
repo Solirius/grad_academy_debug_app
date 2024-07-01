@@ -1,0 +1,27 @@
+// Graphical variables
+@import "config/bootstrap_variables";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+// External libraries
+@import "bootstrap";
+
+// Rails field_with_errors override for forms
+// Prevents div from pushing form elements down the page
+.field_with_errors * {
+  display: block;
+}
+
+.field_with_errors input[type="text"] {
+  display: block;
+}
+
+.field_with_errors input[type="radio"] {
+  display: inline-block;
+}
+
+.invisible {
+  display: none;
+}

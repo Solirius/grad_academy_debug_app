@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <%= render "shared/navbar" %>
+    <% if flash[:notice] %>
+      <div class="flash-notice alert alert-success text-center w-auto mx-3 mt-4" role="alert">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+    <div class="mb-5">
+      <%= yield %>
+    </div>
+    <%= render 'shared/signout_modal' %>
+  </body>
+</html>

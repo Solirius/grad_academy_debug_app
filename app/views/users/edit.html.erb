@@ -1,0 +1,33 @@
+<% provide(:title, t('forms.edit_profile')) %>
+
+<div class="container mt-5">
+  <h2 class="text-danger"><%= t('forms.edit_profile') %></h2>
+  <hr class="border-top border-3 border-danger my-2">
+  <br/>
+  <%= form_with(model: current_user, url: user_path, local: true, method: :patch) do |form| %>
+    <%= render partial: "shared/form_errors", locals: { object: form.object } %>
+
+    <div class="mb-3">
+      <%= form.label :username, t('forms.username'), class: "form-label" %>
+      <%= form.text_field :username, class: "form-control border-danger" %>
+    </div>
+
+    <div class="mb-3">
+      <%= form.label :email, t('forms.email'), class: "form-label" %>
+      <%= form.text_field :email, class: "form-control border-danger", disabled: true %>
+    </div>
+
+    <div class="mb-3">
+      <%= form.label :language, t('forms.language'), class: "form-label" %>
+      <%= form.select :language, I18n.available_locales.map { |locale| [I18n.t("languages.#{locale}"), locale] }, {}, class: "form-select" %>
+    </div>
+
+    <div class="mb-3">
+      <div class="form-control-plaintext"><%= "#{t('forms.top_score_profile')} #{@edit }" %>%</div>
+    </div>
+
+    <div class="d-flex justify-content-start">
+      <%= form.submit t('forms.update_profile'), class: "btn btn-danger px-5 me-2" %>
+    </div>
+  <% end %>
+</div>

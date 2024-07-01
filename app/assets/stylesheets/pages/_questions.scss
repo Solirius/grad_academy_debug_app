@@ -1,0 +1,13 @@
+input[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+  background-clip: content-box;
+  border: 1px solid $red;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+  background-color: $red;
+}

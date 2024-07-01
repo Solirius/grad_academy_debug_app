@@ -1,0 +1,18 @@
+<div class="modal fade" id="submitModal" tabindex="-1" aria-labelledby="submitModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <h3 class="modal-title" id="submitModalLabel"><%= t('check_answers.submit_modal_title') %></h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <hr class="m-0 text-danger">
+      <div class="modal-body">
+        <p><%= t('check_answers.submit_modal_confirmation') %></p>
+      </div>
+      <div class="modal-footer justify-content-between border-0">
+        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal"><%= t('check_answers.submit_modal_cancel') %></button>
+        <%= link_to "Submit", results_steps_path, class: "btn btn-danger" %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,197 @@
+fr:
+  languages:
+    en: "Anglais"
+    fr: "Français"
+  authentication:
+    redirect_if_authenticated_message: "Vous êtes déjà connecté"
+    redirect_if_not_authenticated_message: "Veuillez vous connecter pour accéder à cette page."
+  sessions:
+    create_an_account: "Ou créez un compte"
+    signed_in: "Connecté avec succès"
+    signed_out: "Déconnecté avec succès"
+    sign_out_modal_title: "Confirmer la déconnexion"
+    sign_out_confirmation: "Êtes-vous sûr de vouloir vous déconnecter ?"
+    sign_out_cancel: "Annuler"
+  users:
+    signed_up: "Bienvenue ! Vous vous êtes inscrit avec succès"
+    updated: "Profil mis à jour avec succès"
+    no_score_available: "Aucun score disponible"
+    sign_up_headline: "Commencez votre parcours de quiz dès aujourd'hui !"
+    sign_up_line_one: "Rejoignez-nous pour plonger dans le monde du savoir"
+    create_account: "Créer un compte"
+    login_prompt: "Vous avez déjà un compte ?"
+    errors:
+      invalid_email_or_password: "Email ou mot de passe incorrect"
+  answers:
+    errors:
+      unanswered_questions: "Veuillez répondre à toutes les questions"
+      empty_answer: "La réponse ne peut pas être vide"
+      invalid_question_name: "Nom de question invalide : %{question_name}"
+      invalid_answer: "Réponse invalide : %{answer}"
+  welcome:
+    start_quiz: "Commencer le Quiz"
+    instructions:
+      title: 'Bienvenue sur QuizApp, <span class="username"> %{username}</span> !'
+      subtitle: "Préparez-vous à tester vos connaissances et à vous amuser avec nos quiz passionnants ! Voici quelques instructions de base pour vous aider à démarrer :"
+      list:
+        answer_questions: "Répondez aux questions : Lisez chaque question attentivement et sélectionnez la réponse que vous pensez correcte. Vous pouvez revenir en arrière et modifier vos réponses avant de les soumettre en utilisant les boutons de navigation."
+        submit_answers: "Soumettez vos réponses : Une fois que vous êtes sûr de vos réponses, cliquez sur le bouton \"Soumettre\" à la fin du quiz. Vous pourrez alors voir votre score et revoir les bonnes réponses."
+        start_quiz: "Commencez le quiz : Pour commencer le quiz, il vous suffit de cliquer sur le bouton ci-dessous. Bonne chance et profitez du défi !"
+  forms:
+    sign_in: "Se connecter"
+    sign_up: "S'inscrire"
+    sign_out: "Se déconnecter"
+    username: "Nom d'utilisateur"
+    email: "Email"
+    language: "Langue"
+    edit_profile: "Modifier le profil"
+    top_score_profile: "Meilleur Score :"
+    update_profile: "Mettre à jour le profil"
+    next: "Prochain"
+    submit: "Soumettre"
+    back_button: "Retour"
+    scoreboard: "Classement"
+  quiz_results:
+    your_score: "VOTRE SCORE : "
+    score: "%{score}%"
+    questions_correctly_answered: "%{correct} sur %{total} questions correctement répondues"
+  quiz_form:
+    errors:
+      blank_answer: "Réponse requise"
+    current_page_range: "Page %{start_page} sur 3"
+    question_page_1:
+      submit: "Suivant"
+      question_1:
+        question: "Quel est le plus grand os du corps humain ?"
+        answer_1: "Fémur"
+        answer_2: "Tibia"
+        answer_3: "Humérus"
+        answer_4: "Radius"
+        correct_answer: "Fémur"
+      question_2:
+        question: "Qui a développé la théorie de la relativité ?"
+        answer_1: "Isaac Newton"
+        answer_2: "Albert Einstein"
+        answer_3: "Galilée"
+        answer_4: "Stephen Hawking"
+        correct_answer: "Albert Einstein"
+      question_3:
+        question: "Quelle entreprise a développé le premier microprocesseur commercialement réussi ?"
+        answer_1: "IBM"
+        answer_2: "Microsoft"
+        answer_3: "Apple"
+        answer_4: "Intel"
+        correct_answer: "Intel"
+      question_4:
+        question: "Quelle est la montagne la plus haute du monde ?"
+        answer_1: "Mont Kilimandjaro"
+        answer_2: "Mont Everest"
+        answer_3: "Mont Fuji"
+        answer_4: "Mont McKinley (Denali)"
+        correct_answer: "Mont Everest"
+      question_5:
+        question: "Quel gaz constitue la majorité de l'atmosphère terrestre ?"
+        answer_1: "Oxygène"
+        answer_2: "Dioxyde de carbone"
+        answer_3: "Azote"
+        answer_4: "Hydrogène"
+        correct_answer: "Azote"
+    question_page_2:
+      submit: "Suivant"
+      question_1:
+        question: "Quel est le processus par lequel les plantes fabriquent leur propre nourriture ?"
+        answer_1: "Photosynthèse"
+        answer_2: "Respiration"
+        answer_3: "Transpiration"
+        answer_4: "Germination"
+        correct_answer: "Photosynthèse"
+      question_2:
+        question: "Qu'est-ce que l'étude des insectes ?"
+        answer_1: "Herpétologie"
+        answer_2: "Ornithologie"
+        answer_3: "Entomologie"
+        answer_4: "Ichtyologie"
+        correct_answer: "Entomologie"
+      question_3:
+        question: "Qui a été la première femme à remporter un prix Nobel ?"
+        answer_1: "Rosalind Franklin"
+        answer_2: "Dorothy Hodgkin"
+        answer_3: "Barbara McClintock"
+        answer_4: "Marie Curie"
+        correct_answer: "Marie Curie"
+      question_4:
+        question: "Quel langage de programmation a été développé par Guido van Rossum et est connu pour sa lisibilité et sa simplicité ?"
+        answer_1: "Java"
+        answer_2: "C++"
+        answer_3: "Python"
+        answer_4: "Ruby"
+        correct_answer: "Python"
+      question_5:
+        question: "Qui est l'auteur du roman 'L'Attrape-cœurs' ?"
+        answer_1: "J.D. Salinger"
+        answer_2: "F. Scott Fitzgerald"
+        answer_3: "Ernest Hemingway"
+        answer_4: "Harper Lee"
+        correct_answer: "J.D. Salinger"
+    question_page_3:
+      submit: "Suivant"
+      question_1:
+        question: "Quel est le plus grand mammifère sur Terre ?"
+        correct_answer: "Girafe"
+      question_2:
+        question: "Quel est le plus grand océan du monde ?"
+        correct_answer: "Pacifique"
+      question_3:
+        question: "Quelle est la capitale du Pérou ?"
+        correct_answer: "Lima"
+      question_4:
+        question: "Quel est le symbole chimique de l'or ?"
+        correct_answer: "Au"
+      question_5:
+        question: "Quel est votre langage de programmation préféré ?"
+        correct_answer: "Ruby"
+  check_answers:
+    title: "Vérifier les Réponses"
+    heading: "VÉRIFIEZ VOS RÉPONSES"
+    submit_modal_title: "Confirmer la soumission"
+    submit_modal_confirmation: "Êtes-vous sûr de vouloir soumettre vos réponses et voir vos résultats ?"
+    submit_modal_cancel: "Annuler"
+    table:
+      question_number: "Numéro de Question"
+      question: "Question"
+      answer: "Réponse"
+      change_answer: "Changer la Réponse"
+      change: "Changer"
+    buttons:
+      submit: "Soumettre vos réponses"
+  results:
+    title: "Résultats"
+    heading: "RÉSULTATS"
+    table:
+      question: "Question"
+      correct_answer: "Réponse Correcte"
+      answered: "Répondu"
+      correct_incorrect: "Correct/Incorrect"
+    buttons:
+      continue: "Continuer"
+  scoreboard:
+    title: "Classement"
+    heading: "CLASSEMENT"
+    table:
+      quiz: "Quiz"
+      user: "Utilisateur"
+      date: "Date"
+      score: "Score"
+      download_results: "Télécharger les Résultats"
+      quiz_number: "Quiz n°%{id}"
+      download_filename: "quiz%{id}.csv"
+      username: "Utilisateur"
+      quiz_id: "ID du Quiz"
+      date_attempted: "Date de la tentative"
+      overall_score: "Score global"
+      question: "Question"
+      given_answer: "Réponse donnée"
+      correct_answer: "Bonne réponse"
+    buttons:
+      start_new_quiz: "Commencer un Nouveau Quiz"
+      download_all_results: "Télécharger tous les résultats"

@@ -1,0 +1,14 @@
+.input-size {
+    min-width: 280px;
+}
+
+@media only screen and (max-width: 480px) {
+  .input-size {
+    min-width: 0;
+    max-width: 96%;
+  }
+
+  #mobile-border {
+    border-right: none !important;
+  }
+}

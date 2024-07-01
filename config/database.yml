@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: <%= ENV.fetch('POSTGRES') { 'postgres' } %>
+  password: <%= ENV.fetch('POSTGRES_PASSWORD') { 'password' } %>
+
+development:
+  <<: *default
+  database: grad_academy_debug_app_development
+
+test:
+  <<: *default
+  database: grad_academy_debug_app_test
+
+production:
+  <<: *default
+  database: grad_academy_debug_app_production
+  username: grad_academy_debug_app
+  password: <%= ENV["EXAM_GRAD_TRAINING_APP_DATABASE_PASSWORD"] %>
