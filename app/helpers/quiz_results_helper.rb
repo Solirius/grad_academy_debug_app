@@ -62,7 +62,7 @@ module QuizResultsHelper
   def check_answer(correct_answer, user_answer)
     return false if correct_answer == 'N/A' || user_answer == 'N/A'
 
-    correct_answer.casecmp(user_answer.strip).zero?
+    correct_answer.strip.downcase
   end
 
   # Generates a table row displaying question, correct answer, user's answer, and result (Correct/Incorrect).
