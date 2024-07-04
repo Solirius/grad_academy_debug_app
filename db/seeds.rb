@@ -1,45 +1,7 @@
-# Function to calculate total correct answers and total questions attempted based on correct answers in en.yml
-def total_correct_answers(_user, answers)
-  correct_answers = YAML.load_file(Rails.root.join('config/locales/en.yml'))['en']['quiz_form']
+# Include QuizResultsHelper to access helper methods
+include QuizResultsHelper
 
-  total_correct = 0
-  total_questions = 0
-
-  answers.each do |page_key, answer_list|
-    # Ensure page_key is treated as a string
-    page_key = page_key.to_s if page_key.is_a?(Symbol)
-
-    # Extract page_index from page_key
-    page_index = page_key.split('_').last.to_i - 1
-
-    answer_list.each_with_index do |user_answer, question_index|
-      correct_answer_key = "question_page_#{page_index + 1}.question_#{question_index + 1}.correct_answer"
-
-      # Traverse correct_answers hash to reach the correct answer
-      correct_answer = traverse_correct_answers(correct_answers, correct_answer_key)
-
-      if correct_answer
-        total_questions += 1
-        total_correct += 1 if user_answer.downcase == correct_answer.downcase
-      end
-    end
-  end
-
-  [total_correct, total_questions]
-end
-
-# Helper method to traverse correct_answers hash based on the provided key
-def traverse_correct_answers(hash, key)
-  keys = key.split('.')
-  keys.each do |k|
-    return nil unless hash && hash[k]
-
-    hash = hash[k]
-  end
-  hash.to_s.downcase
-end
-
-# Define sample users
+# Define sample users (assuming User model exists)
 users_data = [
   { email: 'test@test.com', username: 'test', password: 'test' },
   { email: 'alice@example.com', username: 'alice', password: 'password' },
@@ -87,29 +49,30 @@ answers_data = {
 
 # Create answers for each user if they don't already exist
 answers_data.each do |username, answers|
-  user = User.find_by(username:)
+  user = User.find_by(username: username)
 
   if user
     if user.answers.exists?
       puts "Answers for user #{user.username} already exist."
     else
-      total_correct, total_questions = total_correct_answers(user, answers)
-
-      # Calculate score as a percentage
-      score_percentage = total_questions.positive? ? (total_correct.to_f / total_questions * 100).round(2) : 0.0
-
-      Answer.create!(
-        user:,
+      # Create an instance of Answer
+      answer = Answer.create!(
+        user: user,
         answer: answers,
         date_attempted: Time.zone.today,
-        completed: true,
-        score: score_percentage
+        completed: true
       )
+
+      # Use the created answer object for scoring and other operations
+      quiz_results = answer
+
+      score_percentage = score_percentage(quiz_results) || 0
+
+      answer.update(score: score_percentage)
+
       puts "Created answers for user: #{user.username}, Score: #{score_percentage}%"
     end
   else
     puts "User #{username} not found."
   end
 end
-
-puts 'Seed data created successfully!'
