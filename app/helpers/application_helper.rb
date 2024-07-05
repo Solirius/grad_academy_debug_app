@@ -12,9 +12,9 @@ module ApplicationHelper
   def full_title(page_title = '')
     base_title = 'QuizApp'
     if page_title.empty?
-      base_title
+      page_title
     else
-      "#{base_title} - #{page_title}"
+      page_title
     end
   end
 
