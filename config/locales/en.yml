@@ -36,7 +36,7 @@ en:
       list:
         answer_questions: "Answer Questions: Read each question carefully and select the anwser you think is correct. You can go back and edit your answers before submitting by using the navigation buttons."
         submit_answers: "Submit Your Answrs: Once you're confident with your answers, click the \"Submit\" button at the end of the quiz. You'll then be able to see your score and review the correct answers."
-        start_quiz: "Start the Quz: To begin the quiz, simply click the button below. Good luck, and enjoy the challenge!"
+        start_quiz: "Start the Quiz: To begin the quiz, simply click the button below. Good luck, and enjoy the challenge!"
   forms:
     sign_in: "Sign in"
     sign_up: "Sign up"
