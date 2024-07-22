@@ -47,6 +47,12 @@ module QuizResultsHelper
   def score_percentage(quiz_results)
     return 0 if TOTAL_QUESTIONS.zero?
 
+    Rails.logger.debug 'HERE!!!'
+    Rails.logger.debug quiz_results
+    Rails.logger.debug total_correct_answers(quiz_results)
+    Rails.logger.debug total_correct_answers(quiz_results).to_f
+    Rails.logger.debug total_correct_answers(quiz_results).to_f / TOTAL_QUESTIONS
+    Rails.logger.debug total_correct_answers(quiz_results).to_f / TOTAL_QUESTIONS * 100
     (total_correct_answers(quiz_results).to_f / TOTAL_QUESTIONS * 100)
   end
 
