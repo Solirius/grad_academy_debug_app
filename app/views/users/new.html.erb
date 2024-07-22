@@ -4,8 +4,8 @@
     <div class="col-md-5 col-12 border-end border-2 border-danger p-0 mobile-margin" id="mobile-border">
       <h2 class="text-center text-dark"><%= t('users.sign_up_headline') %></h2>
       <h4 class="text-center text-dark fw-normal mt-3"><%= t('users.sign_up_line_one') %></h4>
-      <%= image_tag '', skip_pipeline: true, alt: "Sign up welcome image" %>
-    </div>
+      <img src="<%= asset_path('sign-up-welcome.svg') %>" alt='Sign up welcome image'>
+      </div>
     <div class="col-md-4 col-12 ms-5">
       <h2 class="text-center text-dark"><%= t('users.create_account') %></h2>
       <div class="mt-5">
