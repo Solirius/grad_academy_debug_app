@@ -1,16 +1,15 @@
 <div id="welcome" class="container w-75 mt-5 mb-4 pt-5">
 
-  <br/>
-  <br/>
-   <p class="text-danger"><%= t('welcome.instructions.title', username: current_user.username).html_safe %>
-  </p>
-  <hr />
+
+   <h1 class="text-danger"><%= t('welcome.instructions.title', username: current_user.username).html_safe %>
+  </h1>
+  <hr class="border-top border-3 border-danger my-2"/>
+  <br></br>
    <p class="lead"><%= t('welcome.instructions.subtitle') %> 
 
   <br/>
 
  
-
 
   <ul class="list">
     <li class="mb-2"><%= t('welcome.instructions.list.answer_questions') %></li>
