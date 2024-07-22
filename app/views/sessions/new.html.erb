@@ -1,12 +1,16 @@
 <% provide(:title, 'Sign in') %>
 <div c="d-flex align-items-center justify-content-center mt-4">
   <div>
-    <h2 class="text-center"><%= t('forms.sign_in') %></h2>
+    <h2 class="text-center mt-4"><%= t('forms.sign_in') %></h2>
     <%= link_to sign_up_path do %>
       <h5 class="text-center fw-semibold text-dark m-0"><%= t('sessions.create_an_account') %></h5>
     <% end %>
 
-    <div class="mt-5 input-size">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm">
+      </div>
+      <div class="col-sm">
       <%= form_with model: @user, url: login_path, scope: :user  do |form| %>
         <%= render partial: "shared/form_errors", locals: { object: form.object } %>
 
@@ -29,10 +33,16 @@
         </div>
 
         <div class="text-center">
-          <%= form.submit t('forms.sign_in'), class: "mt-5 w-75" %>
+          <%= form.submit t('forms.sign_in'), class: "mt-5 w-75 text-white bg-danger border-0 rounded py-2" %>
         </div>
 
       <% end %>
+      </div>
+      <div class="col-sm">
+      </div>
     </div>
   </div>
+
+  </div>
 </div>
+
