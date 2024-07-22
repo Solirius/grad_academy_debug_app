@@ -17,6 +17,11 @@
         <h5 class="mb-0">
           <%= link_to t('forms.sign_out'), '#', class: 'text-white m-0 fw-normal', data: { bs_toggle: 'modal', bs_target: '#signoutModal' } %>
         </h5>
+        <% if I18n.locale == :en %>
+          <%= image_tag('en.png', alt: 'English', class: 'rounded-circle', style: 'width:24px; margin-left:16px; margin-bottom:-2px') %>
+        <% elsif I18n.locale == :fr %>
+          <%= image_tag('fr.png', alt: 'French', class: 'rounded-circle', style: 'width:14px') %>
+        <% end %>
       </div>
     <% end %>
   </div>
