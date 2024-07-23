@@ -97,12 +97,12 @@ class StepsController < ApplicationController
   # Sets the quiz form based on parameters or defaults.
   def set_quiz_form
     @quiz_form = if params[:quiz_form].present?
-                   build_quiz_form_from_params(quiz_form_params)
-                 elsif params[:encoded_params].present?
-                   build_quiz_form_from_encoded_params
-                 else
-                   build_default_quiz_form
-                 end
+                  build_quiz_form_from_params(quiz_form_params)
+                elsif params[:encoded_params].present?
+                  build_quiz_form_from_encoded_params
+                else
+                  build_default_quiz_form
+                end
   end
 
   # Restores the state of the quiz form from session storage.
