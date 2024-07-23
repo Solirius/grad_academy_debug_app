@@ -48,7 +48,6 @@ class Answer < ApplicationRecord
   serialize :answer, coder: JSON
   validates :answer, presence: { message: ->(_object, _data) { I18n.t('answers.errors.empty_answer') } }
   validates :date_attempted, presence: true
-  validates :completed, inclusion: { in: [true, false] }
 
   validate :validate_answer, if: -> { answer.present? }
 
