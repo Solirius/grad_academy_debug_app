@@ -5,7 +5,7 @@
 
   <div class="border border-danger w-100 rounded mt-4 mb-4 px-1">
     <h2 class="text-danger text-center mx-3 mt-3">
-      <%= t('quiz_results.your_score') %><span class="text-dark"><%= t('quiz_results.score', score: @score_percentage) %></span>
+      <%= t('quiz_results.your_score') %><span class="text-dark"><%= t('quiz_results.score', score: @score_percentage.round(2)) %></span>
     </h2>
     <h3 class="text-dark text-center mb-3">
       <%= t('quiz_results.questions_correctly_answered', correct: @correct_answers, total: @total_questions) %>
