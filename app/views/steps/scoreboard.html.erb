@@ -1,16 +1,16 @@
 <% provide(:title, t('scoreboard.title')) %>
-<div id="check-answers" class="container d-inline-flex align-items-center mt-4 mb-4 pt-5">
+<div id="check-answers" class="container  align-items-center mt-4 mb-4 pt-5">
   <h1 class="text-danger text-center"><%= t('scoreboard.heading') %></h1>
-  <hr class="border border-danger w-100 border-2 my-2">
+  <hr class="border border-danger w-100 border-2 mt-3">
 
-  <table class="table mt-4">
+  <table class="table">
 
-    <tr>
-      <th>Quiz</th>
-      <th>User</th>
-      <th>Date</th>
-      <th>Score</th>
-      <th>Download Results</th>
+    <tr class="">
+      <th class="col-md-2 pt-4">Quiz</th>
+      <th class="col-md-3 pt-4">User</th>
+      <th class="pt-4">Date</th>
+      <th class="pt-4">Score</th>
+      <th class="pt-4">Download Results</th>
     </tr>
 
     <tbody class="table-group-divider border-danger">
@@ -42,11 +42,11 @@
 
 <div id="check-answers" class="container w-75">
   <div class="d-flex flex-column flex-sm-row justify-content-between">
-    <%= link_to step_path(id: 1), class: "btn btn-outline-danger btn-md mb-2 mb-md-0" do %>
+    <%= link_to step_path(id: 1), class: "btn btn-outline-danger btn-md mb-2 mb-md-0 mt-3" do %>
       <i class="bi bi-play-circle me-2"></i> <%= t('scoreboard.buttons.start_new_quiz') %>
     <% end %>
 
-    <%= link_to scoreboard_steps_path(format: :csv), class: 'btn btn-danger btn-md mb-2 mb-md-0' do %>
+    <%= link_to scoreboard_steps_path(format: :csv), class: 'btn btn-danger btn-md mb-2 mb-md-0 mt-3' do %>
       <i class="bi bi-arrow-down-circle-fill me-2"></i> <%= t('scoreboard.buttons.download_all_results') %>
     <% end %>
   </div>
