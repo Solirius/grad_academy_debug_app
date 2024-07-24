@@ -3,5 +3,7 @@
     <%= image_tag('en.png', alt: 'English', class: 'rounded-circle', style: 'width:24px') %>
   <% elsif I18n.locale == :fr %>
     <%= image_tag('fr.png', alt: 'French', class: 'rounded-circle', style: 'width:14px') %>
+  <% elsif I18n.locale == :il %>
+    <%= image_tag('il.png', alt: 'Hebrew', class: 'rounded-circle', style: 'width:14px') %>
   <% end %>
 </div>

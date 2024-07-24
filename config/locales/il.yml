@@ -1,0 +1,198 @@
+il:
+  languages:
+    en: "English"
+    fr: "French"
+    il: "Hebrew"
+  authentication:
+    redirect_if_authenticated_message: "אתה החברתה"
+    redirect_if_not_authenticated_message: ".נא התחבר בכדי לעבור לדף זה"
+  sessions: 
+    create_an_account: "או צור חשבון"
+    signed_in: "נכנסתה בהצלחה"
+    signed_out: "יצאתה בהצלחה"
+    sign_out_modal_title: "אשר יציאה"
+    sign_out_confirmation: "?האם אתה בטוח שאתה רוצה לצאת"
+    sign_out_cancel: "לבטל"
+  users:
+    signed_up: "ברוך הבא! נרשמתה בהצלחה"
+    updated: "הפרופיל עודכן בהצלחה"
+    no_score_available: "אין ניקוד זמינות"
+    sign_up_headline: "!התחל את הרפּתקה שלך היום"
+    sign_up_line_one: "הצטרפו אלינו ותצלולו לעולם הידע"
+    create_account: "תיצור את המשתמש שלך"
+    login_prompt: "?כבר יש לך חשבון"
+    errors:
+      invalid_email_or_password: 'דוא"ל או סיסמה שגויים'
+  answers:
+    errors:
+      unanswered_questions: "אנא ענו על כל השאלות"
+      empty_answer: "התשובה לא יכולה להיות ריקה"
+      invalid_question_name: "שם שאלה לא חוקי: %{question_name}"
+      invalid_answer: "תשובה לא חוקית: %{answer}"
+  welcome:
+    start_quiz: "התחל חידון"
+    instructions:
+      title: "!<span class=\"username\">%{username}</span>, QuizApp-ברוכים הבאים ל"
+      subtitle: ":התכונן לבחון את הידע שלך וליהנות עם החידונים המרגשים שלנו! הנה כמה הנחיות בסיסיות שיעזרו לך להתחיל"
+      list:
+        answer_questions: "ענה על שאלות: קרא כל שאלה בעיון ובחר את התשובה הנכונה לדעתך. אתה יכול לחזור אחורה ולערוך את התשובות שלך לפני השליחה באמצעות לחצני הניווט"
+        submit_answers: "שלח את התשובות שלך: לאחר שתהיה בטוח בתשובותיך, לחץ על כפתור \"שלח\" בסוף החידון. לאחר מכן תוכל לראות את הציון שלך ולבדוק את התשובות הנכונות"
+        start_quiz: "!התחל את החידון: כדי להתחיל את החידון, פשוט לחץ על הכפתור למטה. בהצלחה, ותהנה מהאתגר"
+  forms:
+    sign_in: "להתחבר"
+    sign_up: "הירשם"
+    sign_out: "התנתק"
+    username: "שם משתמש"
+    email: "אימייל"
+    language: "שפה"
+    edit_profile: ":ערוך פרופיל"
+    top_score_profile: " :ציון מנצח"
+    update_profile: "עדכן פרופיל"
+    next: "הבא"
+    submit: "שלח"
+    back_button: "חזור"
+    scoreboard: "לוח תוצאות"
+  quiz_results:
+    your_score: " :התוצאה שלך"
+    score: "%{score}%"
+    questions_correctly_answered: "%{total} מתוך %{correct} שאלות ענו נכון"
+  quiz_form:
+    errors:
+      blank_answer: "נדרשת תשובה"
+    current_page_range: "מתוך 3 %{start_page} עמוד"
+    question_page_1:
+      submit: "הבא"
+      question_1:
+        question: "?מהי העצם הגדולה ביותר בגוף האדם"
+        answer_1: "ירך"
+        answer_2: "שוקה"
+        answer_3: "זרוע"
+        answer_4: "רדיוס"
+        correct_answer: "ירך"
+      question_2:
+        question: "?מי פיתח את תורת היחסות"
+        answer_1: "אייזק ניוטון"
+        answer_2: "אלברט איינשטיין"
+        answer_3: "גלילאו גליליי"
+        answer_4: "סטיבן הוקינג"
+        correct_answer: "אלברט איינשטיין"
+      question_3:
+        question: "?איזו חברה פיתחה את המיקרופרוססור המסחרי המצליח הראשון"
+        answer_1: "IBM"
+        answer_2: "Microsoft"
+        answer_3: "Apple"
+        answer_4: "Intel"
+        correct_answer: "Intel"
+      question_4:
+        question: "?מהו ההר הגבוה ביותר בעולם"
+        answer_1: "הר קילימנג'רו"
+        answer_2: "הר אוורסט"
+        answer_3: "הר פוג'י"
+        answer_4: "הר מקינלי (דנאלי)"
+        correct_answer: "הר אוורסט"
+      question_5:
+        question: "?איזה גז מרכיב את רוב האטמוספירה של כדור הארץ"
+        answer_1: "חמצן"
+        answer_2: "פחמן דו חמצני"
+        answer_3: "חנקן"
+        answer_4: "מימן"
+        correct_answer: "חנקן"
+    question_page_2:
+      submit: "הבא"
+      question_1:
+        question: "?איך נקרא התהליך שבו צמחים מייצרים את מזונם"
+        answer_1: "פוטוסינתזה"
+        answer_2: "נשימה"
+        answer_3: "אידוי"
+        answer_4: "נביטה"
+        correct_answer: "פוטוסינתזה"
+      question_2:
+        question: "?איך נקרא תחום הלימוד של חרקים"
+        answer_1: "הרפטולוגיה"
+        answer_2: "אורניתולוגיה"
+        answer_3: "אנטומולוגיה"
+        answer_4: "איכטיולוגיה"
+        correct_answer: "אנטומולוגיה"
+      question_3:
+        question: "?מי הייתה האישה הראשונה שזכתה בפרס נובל"
+        answer_1: "רוזלינד פרנקלין"
+        answer_2: "דורותי הודג'קין"
+        answer_3: "ברברה מקלינטוק"
+        answer_4: "מארי קירי"
+        correct_answer: "מארי קירי"
+      question_4:
+        question: "?איזו שפת תכנות פותחה על ידי גואידו ואן רוסום ומוכרת בזכות קריאותה ופשטותה"
+        answer_1: "Java"
+        answer_2: "C++"
+        answer_3: "Python"
+        answer_4: "Ruby"
+        correct_answer: "Python"
+      question_5:
+        question: "?מי הסופר של הרומן 'התפוז המורם'"
+        answer_1: "ג'.ד. סלינג'ר"
+        answer_2: "פ. סקוט פיצג'רלד"
+        answer_3: "ארנסט המינגווי"
+        answer_4: "הארפר לי"
+        correct_answer: "ג'.ד. סלינג'ר"
+    question_page_3:
+      submit: "הבא"
+      question_1:
+        question: "?מהו היונק הגבוה ביותר על פני כדור הארץ"
+        correct_answer: "ג'ירפה"
+      question_2:
+        question: "?מהו האוקיינוס הגדול ביותר בעולם"
+        correct_answer: "האוקיינוס השקט"
+      question_3:
+        question: "?מהי עיר הבירה של פרו"
+        correct_answer: "לימה"
+      question_4:
+        question: "?מהו הסימן הכימי לזהב"
+        correct_answer: "au"
+      question_5:
+        question: "?מהי שפת התכנות האהובה עליך"
+        correct_answer: "ruby"
+  check_answers:
+    title: "בדוק תשובות"
+    heading: "בדוק את תשובותיך"
+    submit_modal_title: "אשר הגשה"
+    submit_modal_confirmation: "?האם אתה בטוח שברצונך לשלוח את התשובות שלך ולראות את התוצאות שלך"
+    submit_modal_cancel: "לבטל"
+    table:
+      question_number: "מספר שאלה"
+      question: "שאלה"
+      answer: "תשובה"
+      change_answer: "לשנות תשובה"
+      change: "לשנות"
+    buttons:
+      submit: "שלח את התשובות שלך"
+  results:
+    title: "תוצאות"
+    heading: "תוצאות"
+    table:
+      question: "שאלה"
+      correct_answer: "תשובה נכונה"
+      answered: "ענה"
+      correct_incorrect: "נכון/לא נכון"
+    buttons:
+      continue: "להמשיך"
+  scoreboard:
+    title: "לוח תוצאות"
+    heading: "לוח תוצאות"
+    table:
+      quiz: "חידון"
+      user: "משתמש"
+      date: "תאריך"
+      score: "ציון"
+      download_results: "הורדת תוצאות"
+      quiz_number: "חידון #%{id}"
+      download_filename: "חידון%{id}.csv"
+      username: "שם משתמש"
+      quiz_id: "מזהה חידון"
+      date_attempted: "תאריך ניסיון"
+      overall_score: "ציון כולל"
+      question: "שאלה"
+      given_answer: "ניתנה תשובה"
+      correct_answer: "תשובה נכונה"
+    buttons:
+      start_new_quiz: "התחל חידון חדש"
+      download_all_results: "הורד את כל התוצאות"
