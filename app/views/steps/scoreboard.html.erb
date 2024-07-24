@@ -5,6 +5,7 @@
 
   <table class="table">
 
+  <div class="animated fadeInLeftBig">
     <tr class="">
       <th class="col-md-2 pt-4">Quiz</th>
       <th class="col-md-3 pt-4">User</th>
@@ -12,6 +13,7 @@
       <th class="pt-4">Score</th>
       <th class="pt-4">Download Results</th>
     </tr>
+
 
     <tbody class="table-group-divider border-danger">
       <% @top_scores.each_with_index do |answer, _index| %>
@@ -36,9 +38,10 @@
         </tr>
       <% end %>
     </tbody>
+    </div>
   </table>
-
-</div>
+  </div>
+  </div>
 
 <div id="check-answers" class="container w-75">
   <div class="d-flex flex-column flex-sm-row justify-content-between">

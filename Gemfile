@@ -5,6 +5,7 @@ ruby '3.3.0'
 gem 'bcrypt', '~> 3.1.7'
 gem 'bootsnap', require: false
 gem 'bootstrap'
+gem 'animate.css-rails', '~> 3.2'
 gem 'byebug'
 gem 'dotenv-rails'
 gem 'image_processing', '~> 1.2'
