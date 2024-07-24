@@ -1,17 +1,23 @@
 import "bootstrap"
 import "@hotwired/turbo-rails"
 
-// app/javascript/application.js
-
-document.addEventListener('DOMContentLoaded', function() {
+function initializeFormSubmission() {
     const languageSelect = document.getElementById('languageSelect');
     const languageForm = document.getElementById('languageForm');
   
     if (languageSelect && languageForm) {
-      languageSelect.addEventListener('change', function() {
-        // Manually submit the form when the dropdown value changes
-        languageForm.submit();
-      });
+        languageSelect.removeEventListener('change', handleLanguageChange);
+        languageSelect.addEventListener('change', handleLanguageChange);
     }
-  });
-  
+}
+
+function handleLanguageChange(event) {
+    const languageForm = document.getElementById('languageForm');
+    if (languageForm) {
+        languageForm.submit();
+    }
+}
+
+document.addEventListener('DOMContentLoaded', initializeFormSubmission);
+document.addEventListener('turbolinks:load', initializeFormSubmission); // For Turbolinks
+document.addEventListener('turbo:load', initializeFormSubmission); // For Turbo
