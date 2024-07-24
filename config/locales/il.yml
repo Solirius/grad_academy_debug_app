@@ -59,7 +59,7 @@ il:
   quiz_form:
     errors:
       blank_answer: "נדרשת תשובה"
-    current_page_range: "מתוך 3 %{start_page} עמוד"
+    current_page_range: "3 עמוד %{start_page} מתוך"
     question_page_1:
       submit: "הבא"
       question_1:
