@@ -1,8 +1,8 @@
 il:
   languages:
-    en: "English"
-    fr: "French"
-    il: "Hebrew"
+    en: "אנגלית"
+    fr: "צרפתית"
+    il: "עברית"
   authentication:
     redirect_if_authenticated_message: "אתה החברתה"
     redirect_if_not_authenticated_message: ".נא התחבר בכדי לעבור לדף זה"
