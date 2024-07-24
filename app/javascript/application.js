@@ -3,12 +3,8 @@ import "@hotwired/turbo-rails"
 
 function initializeFormSubmission() {
     const languageSelect = document.getElementById('languageSelect');
-    const languageForm = document.getElementById('languageForm');
   
-    if (languageSelect && languageForm) {
-        languageSelect.removeEventListener('change', handleLanguageChange);
-        languageSelect.addEventListener('change', handleLanguageChange);
-    }
+    languageSelect.addEventListener('change', handleLanguageChange);
 }
 
 function handleLanguageChange(event) {
